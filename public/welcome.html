@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <h1>Welcome</h1>
+      <p class="lede">
+        This project is a test client for <a class="inline-link" href="https://alok-auth.vercel.app/">Alok Auth</a>, a minimal OAuth 2.0 + OpenID Connect auth server.
+      </p>
+
+      <p id="welcome-status" class="status">Sign in to continue.</p>
+      <p id="error-banner" class="error hidden" role="alert"></p>
+
+      <div class="panel">
+        <a id="welcome-action" class="btn-provider" href="/auth/login">
+          <span id="welcome-action-label">Login with Alok Auth</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="welcome.js"></script>
+</body>
+</html>

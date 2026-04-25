@@ -1,0 +1,17 @@
+{
+  "name": "oidc-identity-demo",
+  "version": "1.0.0",
+  "description": "Minimal OIDC identity demo with stateless app auth",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

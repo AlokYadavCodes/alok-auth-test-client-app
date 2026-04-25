@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Test App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <nav class="card-nav" aria-label="Secondary">
+        <a class="nav-link" href="/welcome">Welcome</a>
+      </nav>
+
+      <h1>Profile</h1>
+
+      <p id="status-message" class="status">Checking sign-in state…</p>
+      <p id="error-banner" class="error hidden" role="alert"></p>
+
+      <div id="profile-view" class="panel hidden">
+        <img id="user-avatar" class="avatar" src="" alt="User avatar" />
+        <h2 id="user-name"></h2>
+        <p id="user-email" class="meta"></p>
+
+        <dl class="claims">
+          <div class="claim-row">
+            <dt id="subject-label">Provider subject identifier</dt>
+            <dd id="user-sub"></dd>
+          </div>
+          <div class="claim-row">
+            <dt>Email verified</dt>
+            <dd id="user-verified"></dd>
+          </div>
+        </dl>
+
+        <button id="logout-btn" class="btn-logout" type="button">Log out</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
